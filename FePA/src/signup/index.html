@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class = "signuppage">
+        <header>
+            <div class = "fixed_header">
+                <img class = "fixed_header__logo" src = "../visual/img/Paw Alert_logo.png">
+                <span class = "app_name">
+                    Paw Alert
+                </span>
+            </div>
+
+            <div class = "signupbar">
+                <span class = "signupbar__text">
+                    Sign up to Paw Alert
+                </span>
+            </div>
+        </header>
+
+        <div class="main-part">
+            <div class="signup-page__left">
+                <img src="../visual/img/curious_dog.jpg" alt="Image missing" class="signup-page__image">
+                <h1 class="signup-page__title">
+                    Welcome to Paw Alert!
+                </h1>
+            </div>
+            <div class="signup-page__right">
+                <form class="signup-form">
+                    <div class="signup-form__field">
+                        <label for="last-name" class="signup-form__label">
+                            Last name
+                        </label>
+                        <input type="text" id="last-name" class="signup-form__input" placeholder="Enter your last name">
+                    </div>
+
+                    <div class="signup-form__field">
+                        <label for="first-name" class="signup-form__label">
+                            First name
+                        </label>
+                        <input type="text" id="first-name" class="signup-form__input" placeholder="Enter your first name">
+                    </div>
+
+                    <div class="signup-form__field">
+                        <label for="email" class="signup-form__label">
+                            Email
+                        </label>
+                        <input type="email" id="email" class="signup-form__input" placeholder="Enter your email">
+                    </div>
+
+                    <div class="signup-form__field">
+                        <label for="password" class="signup-form__label">
+                            Password
+                        </label>
+                        <input type="password" id="password" class="signup-form__input" placeholder="Enter your password">
+                    </div>
+
+                    <div class="signup-form__field">
+                        <label for="password" class="signup-form__label">
+                            Confirm Password
+                        </label>
+                        <input type="password" id="password" class="signup-form__input" placeholder="Confirm your password">
+                    </div>
+
+                    <div class="signup-form__field">
+                        <label for="city" class="signup-form__label">
+                            City
+                        </label>
+                        <input type="text" id="city" class="signup-form__input" placeholder="Enter your city">
+                    </div>
+
+                    <div class="signup-form__field">
+                        <label for="state">
+                            State
+                        </label>         
+                        <select name="state" id="state" aria-placeholder="Select your state" class="signup-form__select">
+                            <option value="Iasi">Iasi</option>
+                            <option value="Suceava">Suceava</option>
+                            <option value="Botosani">Botosani</option>
+                            <option value="Vaslui">Vaslui</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="signup-form__submit">
+                        Sign up
+                    </button>
+                </form>
+
+                <p class="login-text">
+                    Already have an account? 
+                    <a class="login-text__link" href="../login/index.html">
+                        Login here
+                    </a>.
+                </p>
+              </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+/*
+<div class = "fixed_header">
+    <img class = "fixed_header__logo" src = "../visual/img/FePA_logo.png">
+    <span class = "app_name">
+        FePA
+    </span>
+</div>
+*/
+/* general */
+body {
+  background-color: #FFFAF0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.loginpage {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat Alternates", sans-serif;
+  /* header */
+  /* main part */
+}
+.loginpage .fixed_header {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  height: 7%;
+  width: 100%;
+  z-index: 9;
+  background-color: #FFFAF0;
+  border-bottom: 2px solid #FFBB29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginpage .fixed_header .fixed_header__logo {
+  height: 50px;
+  width: auto;
+}
+.loginpage .fixed_header .app_name {
+  margin-left: 1%;
+  color: #0F0600;
+  font-weight: bold;
+  font-size: 2em;
+}
+.loginpage .loginbar {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 14%;
+  width: 100%;
+  z-index: 8;
+  background-color: #2FCCAF;
+}
+.loginpage .loginbar .loginbar__text {
+  position: absolute;
+  margin-top: 63px;
+  margin-left: 2.5%;
+  background-color: #2FCCAF;
+  color: #FFFAF0;
+  font-weight: bold;
+  font-size: 2em;
+}
+.loginpage .main-part {
+  padding-top: 14%;
+  display: flex;
+  height: 76vh;
+}
+.loginpage .main-part .login-page__left,
+.loginpage .main-part .login-page__right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loginpage .main-part .login-page__image {
+  width: 1000px;
+  max-width: 100%;
+  height: auto;
+}
+.loginpage .main-part .login-page__title {
+  color: #55E6CB;
+  font-size: 32px;
+  margin-top: 5px;
+}
+.loginpage .main-part .login-page__right {
+  background-color: #FFFAF0;
+}
+.loginpage .main-part .login-form {
+  width: 80%;
+  margin: 0 auto;
+}
+.loginpage .main-part .login-form .login-form__field {
+  margin-bottom: 20px;
+}
+.loginpage .main-part .login-form .login-form__label {
+  display: block;
+  margin-bottom: 5px;
+}
+.loginpage .main-part .login-form .login-form__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #FFFAF0;
+  border-radius: 5px;
+}
+.loginpage .main-part .login-form .login-form__submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #2FCCAF;
+  color: #FFFAF0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.loginpage .main-part .login-form .login-form__submit:hover {
+  background-color: #55E6CB;
+}
+.loginpage .main-part .signup-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #0F0600;
+}
+.loginpage .main-part .signup-text__link {
+  color: #FFBB29;
+  text-decoration: none;
+}
+.loginpage .main-part .signup-text__link:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */

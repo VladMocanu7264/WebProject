@@ -1,0 +1,136 @@
+/*
+<div class = "fixed_header">
+    <img class = "fixed_header__logo" src = "../visual/img/FePA_logo.png">
+    <span class = "app_name">
+        FePA
+    </span>
+</div>
+*/
+body {
+  background-color: #FFFAF0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.aboutus-page {
+  width: 100%;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.aboutus-page .fixed_header {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  height: 7%;
+  width: 100%;
+  z-index: 9;
+  background-color: #FFFAF0;
+  border-bottom: 2px solid #FFBB29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutus-page .fixed_header .fixed_header__logo {
+  height: 50px;
+  width: auto;
+}
+.aboutus-page .fixed_header .app_name {
+  margin-left: 1%;
+  color: #0F0600;
+  font-weight: bold;
+  font-size: 2em;
+}
+.aboutus-page .aboutusbar {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 14vh;
+  width: 100%;
+  z-index: 8;
+  background-color: #2FCCAF;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+.aboutus-page .aboutusbar .aboutusbar__text {
+  position: relative;
+  width: 47.5%;
+  margin-top: 63px;
+  margin-left: 2.5%;
+  background-color: #2FCCAF;
+  display: flex;
+  padding-right: 20px;
+}
+.aboutus-page .aboutusbar .aboutusbar__text .headerarrow {
+  width: 8%;
+}
+.aboutus-page .aboutusbar .aboutusbar__text .headerarrow .headerarrow__image {
+  max-height: 100%;
+}
+.aboutus-page .aboutusbar .aboutusbar__text .pagetitle {
+  width: 100%;
+  color: #FFFAF0;
+  font-size: 2em;
+}
+.aboutus-page .aboutusbar .aboutusbar__headerbuttons {
+  width: 47.5%;
+  margin-top: 63px;
+  margin-right: 2.5%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-items: center;
+  color: #FFFAF0;
+}
+.aboutus-page .aboutusbar .aboutusbar__headerbuttons .headerbutton {
+  margin-right: 0;
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px outset;
+  border-radius: 7px;
+  font-size: 1.2em;
+  background-color: #FFBB29;
+}
+.aboutus-page .aboutusbar .aboutusbar__headerbuttons .headerbutton a {
+  color: #FFFAF0;
+  text-decoration: none;
+}
+.aboutus-page .main-content-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.aboutus-page .main-content {
+  margin-top: 14%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.aboutus-page .main-content .top-left,
+.aboutus-page .main-content .top-right,
+.aboutus-page .main-content .middle-left,
+.aboutus-page .main-content .middle-right,
+.aboutus-page .main-content .bottom-left,
+.aboutus-page .main-content .bottom-right {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.aboutus-page .main-content .text-box {
+  padding: 20px;
+  color: #0F0600;
+  font-size: 1.3em;
+}
+.aboutus-page .main-content .image {
+  width: 700px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.aboutus-page .main-content .bigger {
+  font-weight: bold;
+  font-size: larger;
+  color: #2FCCAF;
+}/*# sourceMappingURL=styles.css.map */

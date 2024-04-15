@@ -1,0 +1,131 @@
+@use '../visual/colors/colors' as colors;
+@use '../visual/fonts/fonts' as fonts;
+@use '../visual/reusable/main-header' as header;
+
+/* general */
+body {
+    background-color: colors.$bkg;
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.loginpage {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    @include fonts.main;
+
+    /* header */
+    @include header.style;
+
+    .loginbar {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        height: 14%;
+        width: 100%;
+        z-index: 8;
+
+        background-color: colors.$primary_dark;
+
+        .loginbar__text {
+            position: absolute;
+            margin-top: 63px;
+            margin-left: 2.5%;
+
+            background-color: colors.$primary_dark;
+            color: colors.$bkg;
+
+            font-weight: bold;
+            font-size: 2em;
+        }
+    }
+
+    /* main part */
+    .main-part {
+        padding-top: 14%;
+        display: flex;
+        height: 76vh;
+
+        .login-page__left,
+        .login-page__right {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-page__image {
+            width: 1000px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .login-page__title {
+            color: colors.$primary_light;
+            font-size: 32px;
+            margin-top: 5px;
+        }
+
+        .login-page__right {
+            background-color: colors.$bkg;
+        }
+
+        .login-form {
+            width: 80%;
+            margin: 0 auto;
+
+            .login-form__field {
+                margin-bottom: 20px; // Adjust spacing between fields
+            }
+    
+            .login-form__label {
+                display: block;
+                margin-bottom: 5px;
+            }
+    
+            .login-form__input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid colors.$bkg; 
+                border-radius: 5px;
+            }
+    
+            .login-form__submit {
+                width: 100%;
+                padding: 10px;
+                background-color: colors.$primary_dark; 
+                color: colors.$bkg; 
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+    
+                &:hover {
+                    background-color: colors.$primary_light;
+                }
+            }
+        }
+
+        .signup-text {
+            margin-top: 20px;
+            font-size: 14px;
+            color: colors.$text; 
+        }
+        
+        .signup-text__link {
+            color: colors.$accent;
+            text-decoration: none;
+        
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

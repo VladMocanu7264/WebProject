@@ -1,0 +1,119 @@
+@use '../visual/colors/colors' as colors;
+@use '../visual/fonts/fonts' as fonts;
+@use '../visual/reusable/main-header' as header;
+
+body {
+    background-color: colors.$bkg;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.aboutus-page {
+    width: 100%;
+    @include fonts.main;
+
+    @include header.style;
+
+    .aboutusbar {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 14vh;
+        width: 100%;
+        z-index: 8;
+        background-color: colors.$primary_dark;
+        display: flex;
+        flex-direction: row;
+
+        font-weight: bold;
+
+        .aboutusbar__text {
+            position: relative;
+            width: 47.5%;
+            margin-top: 63px;
+            margin-left: 2.5%;
+            background-color: colors.$primary_dark;
+            display: flex;
+            padding-right: 20px;
+
+            .headerarrow {
+                width: 8%;
+                .headerarrow__image {
+                    max-height: 100%;
+                }
+            }
+
+            .pagetitle {
+                width: 100%;
+                color: colors.$bkg;
+                font-size: 2em;
+            }
+        }
+
+        .aboutusbar__headerbuttons {
+            width: 47.5%;
+            margin-top: 63px;
+            margin-right: 2.5%;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-items: center;
+            color: colors.$bkg;
+
+            .headerbutton {
+                margin-right: 0;
+                margin-left: 10px;
+                padding: 5px;
+                border: 1px outset;
+                border-radius: 7px;
+                font-size: 1.2em;
+                background-color: colors.$accent;
+
+                a {
+                    color: colors.$bkg;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .main-content-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main-content {
+        margin-top: 14%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+
+        .main-content__title {
+            color: colors.$primary_dark;
+            font-size: 2em;
+        }
+
+        .main-content__contacts {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            color: colors.$text;
+
+            .link {
+                text-decoration: none;
+                color: colors.$primary_light;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: colors.$primary_dark;
+                }
+            }
+        }
+    }
+}

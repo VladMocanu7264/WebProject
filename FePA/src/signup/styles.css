@@ -1,0 +1,144 @@
+/*
+<div class = "fixed_header">
+    <img class = "fixed_header__logo" src = "../visual/img/FePA_logo.png">
+    <span class = "app_name">
+        FePA
+    </span>
+</div>
+*/
+/* general */
+body {
+  background-color: #FFFAF0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.signuppage {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat Alternates", sans-serif;
+  /* header */
+  /* main part */
+}
+.signuppage .fixed_header {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  height: 7%;
+  width: 100%;
+  z-index: 9;
+  background-color: #FFFAF0;
+  border-bottom: 2px solid #FFBB29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signuppage .fixed_header .fixed_header__logo {
+  height: 50px;
+  width: auto;
+}
+.signuppage .fixed_header .app_name {
+  margin-left: 1%;
+  color: #0F0600;
+  font-weight: bold;
+  font-size: 2em;
+}
+.signuppage .signupbar {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 14%;
+  width: 100%;
+  z-index: 8;
+  background-color: #2FCCAF;
+}
+.signuppage .signupbar .signupbar__text {
+  position: absolute;
+  margin-top: 63px;
+  margin-left: 2.5%;
+  background-color: #2FCCAF;
+  color: #FFFAF0;
+  font-weight: bold;
+  font-size: 2em;
+}
+.signuppage .main-part {
+  padding-top: 14%;
+  display: flex;
+  height: 70vh;
+}
+.signuppage .main-part .signup-page__left,
+.signuppage .main-part .signup-page__right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signuppage .main-part .signup-page__image {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+.signuppage .main-part .signup-page__title {
+  color: #55E6CB;
+  font-size: 32px;
+  margin-top: 5px;
+}
+.signuppage .main-part .signup-page__right {
+  background-color: #FFFAF0;
+}
+.signuppage .main-part .signup-form {
+  width: 80%;
+  margin: 0 auto;
+}
+.signuppage .main-part .signup-form .signup-form__field {
+  margin-bottom: 10px;
+}
+.signuppage .main-part .signup-form .signup-form__field .signup-form__label {
+  display: block;
+  margin-bottom: 5px;
+}
+.signuppage .main-part .signup-form .signup-form__field .signup-form__select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  margin-top: 5px;
+}
+.signuppage .main-part .signup-form .signup-form__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #FFFAF0;
+  border-radius: 5px;
+}
+.signuppage .main-part .signup-form .signup-form__submit {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #2FCCAF;
+  color: #FFFAF0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.signuppage .main-part .signup-form .signup-form__submit:hover {
+  background-color: #55E6CB;
+}
+.signuppage .main-part .login-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #0F0600;
+}
+.signuppage .main-part .login-text__link {
+  color: #FFBB29;
+  text-decoration: none;
+}
+.signuppage .main-part .login-text__link:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=styles.css.map */

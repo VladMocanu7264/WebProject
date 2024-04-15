@@ -1,0 +1,41 @@
+@use '../colors/colors' as colors;
+
+@mixin style {
+    .fixed_header {
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        height: 7%;
+        width: 100%;
+        z-index: 9;
+    
+        background-color: colors.$bkg;
+        border-bottom: 2px solid colors.$accent;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        .fixed_header__logo {
+            height: 50px;
+            width: auto;
+        }
+    
+        .app_name {
+            margin-left: 1%;
+    
+            color: colors.$text;
+    
+            font-weight: bold;
+            font-size: 2em;
+        }
+    }
+}
+/*
+<div class = "fixed_header">
+    <img class = "fixed_header__logo" src = "../visual/img/FePA_logo.png">
+    <span class = "app_name">
+        FePA
+    </span>
+</div>
+*/

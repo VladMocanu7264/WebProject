@@ -1,0 +1,126 @@
+@use '../visual/colors/colors' as colors;
+@use '../visual/fonts/fonts' as fonts;
+@use '../visual/reusable/main-header' as header;
+
+body {
+    background-color: colors.$bkg;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.help-page {
+    width: 100%;
+    @include fonts.main;
+
+    @include header.style;
+
+    .helpbar {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 14vh;
+        width: 100%;
+        z-index: 8;
+        background-color: colors.$primary_dark;
+        display: flex;
+        flex-direction: row;
+
+        font-weight: bold;
+
+        .helpbar__text {
+            position: relative;
+            width: 47.5%;
+            margin-top: 63px;
+            margin-left: 2.5%;
+            background-color: colors.$primary_dark;
+            display: flex;
+            padding-right: 20px;
+
+            .headerarrow {
+                width: 8%;
+                .headerarrow__image {
+                    max-height: 100%;
+                }
+            }
+
+            .pagetitle {
+                width: 100%;
+                color: colors.$bkg;
+                font-size: 2em;
+            }
+        }
+
+        .helpbar__headerbuttons {
+            width: 47.5%;
+            margin-top: 63px;
+            margin-right: 2.5%;
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-items: center;
+            color: colors.$bkg;
+
+            .headerbutton {
+                margin-right: 0;
+                margin-left: 10px;
+                padding: 5px;
+                border: 1px outset;
+                border-radius: 7px;
+                font-size: 1.2em;
+                background-color: colors.$accent;
+
+                a {
+                    color: colors.$bkg;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .main-content-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    .main-content {
+        margin-top: 14%;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+        .top-left,
+        .top-right,
+        .middle-left,
+        .middle-right,
+        .bottom-left,
+        .bottom-right {
+            display: flex;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .text-box {
+            padding: 20px;
+            color: colors.$text;
+            font-size: 1.3em;
+        }
+
+        .image {
+            width: 700px;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .bigger {
+            font-weight: bold;
+            font-size: larger;
+            color: colors.$primary_dark;
+        }
+    }
+}
